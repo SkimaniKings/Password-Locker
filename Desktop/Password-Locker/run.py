@@ -1,6 +1,7 @@
 #!/usr/bin/env python3.6
 from credentials import Credentials
 import user 
+import random 
 def create_user(fname,lname,phone,email):
     '''
     Function to create a new user
@@ -94,6 +95,7 @@ def main():
             
         else:
             print("You have made an invalid choice. Please try again")
+            print('-'*100)
             
 if __name__ == '__main__':
     

@@ -52,6 +52,8 @@ def main():
         if short_code=='cu' :
             print("welcome. Follow this simple steps to Create an account")
             print('-'*50)
+            print("What site would you like to generate an account for")
+            site =input()
             print("First name ....")
             f_name=input()
             print('Last name....')
@@ -60,9 +62,10 @@ def main():
             phone=input()
             print('Enter email address ....')
             email=input()
-            
             # save_user(create_user(f_name,l_name,phone,email)) #save and create user
-            print(f"Please confirn your details fname:{f_name} lname:{l_name}  phone:{phone} email:{email}")
+            print("How would you love your password? \n pp:To generate own password \n pg:Have password generated for you")
+            print('\n')
+            print(f"Please confirm your details fname:{f_name} lname:{l_name}  phone:{phone} email:{email}")
             print("Enter 'y' to continue or 'n' to input new data")
             response=input()
             if response =='y':
@@ -87,7 +90,7 @@ def main():
             user_name = input("User name: ")
             password = input("password: ")
             print(f"Welcome {user_name} Your credentials have been received.")
-            save_user(create_user(fname,lname,phone,email))
+            # save_user(create_user(fname,lname,phone,email))
         elif short_code == 'ex':
             print("Thank for Visiting Password-Locker.......See you soon!")   
             break  

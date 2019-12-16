@@ -14,5 +14,6 @@ class User:
         save_contact method saves contact objects into user_array
         """
         User.user_list.append(self)
-
+ def test_display_users(self):
+        self.assertEqual(User.display_users(),User.user_list)
  

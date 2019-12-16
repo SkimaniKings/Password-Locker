@@ -62,7 +62,6 @@ def main():
             phone=input()
             print('Enter email address ....')
             email=input()
-            # save_user(create_user(f_name,l_name,phone,email)) #save and create user
             print('\n')
             print("How would you love your password? \n pp:To generate own password \n pg:Have password generated for you")
             password=input()
@@ -87,24 +86,16 @@ def main():
             else:
                  print(
                      "Kindly use this short codes \n CU: To create new user account\n LG: To log in to existing account \n DA: To display list of accounts \n EX:To exit")
-            break 
+            break
+            save_user(create_user(f_name, l_name, phone,email))
         elif short_code == 'lg':
             print("Welcome.What site would you love to log into?")
             site = input()
-            print(f"Welcome to {site}. Have fun!")
-            print('-'*50)
-            print("First name ....")
-            fname=input()
-            print('Last name....')
-            lname=input()
-            print("Enter Phone Number")
-            phone=input()
-            print('Enter email address ....')
-            email=input()
             user_name = input("User name: ")
             password = input("password: ")
             print(f"Welcome {user_name} Your credentials have been received.")
-            # save_user(create_user(fname,lname,phone,email))
+            print(f"Welcome to {site}. Have fun!")
+            save_user(create_user(f_name, l_name, phone,email))
         elif short_code == 'ex':
             print("Thank for Visiting Password-Locker.......See you soon!")   
             break  

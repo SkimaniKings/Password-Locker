@@ -43,7 +43,7 @@ class TestUser(unittest.TestCase):
         A test that checks if accounts can be deleted
         '''
         self.new_credentials_list.save_credentials()
-        test_credentials=Credentials("facebook","testerT@gmail.com","password") #new credentials
+        test_credentials=Credentials("facebook","testerT@gmail.com","password") 
         test_credentials.save_credentials()
         self.new_credentials_list.delete_account()
         self.assertEqual(len(Credentials.credentials_list),1)

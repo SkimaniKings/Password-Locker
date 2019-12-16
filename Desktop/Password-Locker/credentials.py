@@ -24,12 +24,3 @@ class Credentials:
         method that returns the class array
         """
         return cls.credentials_list
-    @classmethod
-    def check_user_exist(cls,user_name,password):
-        
-    
-    #Method that checks if a user exist from user list.
-        for user in User.user_list:
-            if user.user_name == user_name and user.password == password:
-                return True
-            return False

@@ -23,3 +23,5 @@ class Credentials:
         method that returns the class array
         """
         return cls.credentials_list
+    def delete_account(self):
+        '''

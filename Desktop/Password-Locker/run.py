@@ -64,8 +64,11 @@ def main():
             # save_user(create_user(fname,lname,phone,email)) 
             print(f"Please confirn your details fname:{fname} lname:{lname}  phone:{phone} email:{email}")
             print("Enter 'y' to continue or 'n' to input new data")
-            print(f"Hello {fname} {lname} . Your account has been successfuly created.")
-            
+            response=input()
+            if response =='y':
+                print(f"Hello {fname} {lname} . Your account has been successfuly created.")
+            else:
+                 print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
             
 if __name__ == '__main__':
     

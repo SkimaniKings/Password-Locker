@@ -30,11 +30,16 @@ def delete_credentials(credential):
     Function to delete all users credentials
     """
     credential.delete_credential()
-def display_credential():
+def display_credential(Credentials):
     '''
     Function that displays credentials
     '''
     return Credentials.display_credential()
+def display_user(user):
+    """
+    Function that returns saved users
+    """
+    return user.display_users()
 
 def main():
     print("Hello! Welcome to Password-Locker")

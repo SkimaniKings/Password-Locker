@@ -21,8 +21,17 @@ class TestUser(unittest.TestCase):
         test_save_user test case to test if the user object is saved into
          the users array
         """
-        self.new_user.save_user_details()  
+        self.new_user.save_user_details()
         self.assertEqual(len(User.user_list), 1)
+    def test_save_multiple_users(self):
+        '''
+        test_save_multiple_contact to check if we can save multiple users
+        objects to our user_list
+        '''
+        self.new_user.save_user_details()
+        test_user=User("Test","Tester","0712345678","testuser@gmail.com")
+        test_user.save_user_details()
+        self.assertEqual(len(User.user_list),2)
 
 if __name__ == '__main__':
     unittest.main()

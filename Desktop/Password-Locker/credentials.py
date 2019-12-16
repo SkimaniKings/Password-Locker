@@ -12,16 +12,15 @@ class Credentials:
         save credentials list into credentials list array
         '''
         Credentials.credentials_list.append(self)
-    def save_credentials(self):
+   
+    def delete_account(self):
         '''
-        test to confirm if the application saves multiple users
+        method that allows application to delete accounts
         '''
-        Credentials.credentials_list.append(self)
+        Credentials.credentials_list.remove(self)
     @classmethod
     def display_credentials(cls):
         """
         method that returns the class array
         """
         return cls.credentials_list
-    def delete_account(self):
-        '''

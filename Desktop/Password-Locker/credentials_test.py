@@ -7,6 +7,11 @@ class TestUser(unittest.TestCase):
         Set up method to run before each test cases.
         """
         self.new_credentials_list=Credentials("twitter","kimsimo10@gmail.com","password")
+    def tearDown(self):
+        '''
+            tearDown method that does clean up after each test case has run.
+        '''
+        Credentials.credentials_list=[]
     def test_init(self):
         '''
         test_init test case to test if the object is initialized properly
@@ -19,14 +24,14 @@ class TestUser(unittest.TestCase):
         test to test if the credentials are being saved
         '''
         self.new_credentials_list.save_credentials()
-        self.assertEqual(len(Credentials.credentials_list),1)
+        self.assertEqual(len(Credentials.credentials_list),2)
     def test_save_multiple_credentials(self):
         '''
         test to confirm if the application saves multiple users
         '''
         self.new_credentials_list.save_credentials()
-        test_credentials=("facebook","testerT@gmail.com","password")
-        # test_credentials.save_credentials()
+        test_credentials=Credentials("facebook","testerT@gmail.com","password")
+        test_credentials.save_credentials()
         self.assertEqual(len(Credentials.credentials_list),2)
     def test_display_credentials(self):
         '''
@@ -38,7 +43,7 @@ class TestUser(unittest.TestCase):
         A test that checks if accounts can be deleted
         '''
         self.new_credentials_list.save_credentials()
-        test_credentials=("facebook","testerT@gmail.com","password") #new credentials
+        test_credentials=Credentials("facebook","testerT@gmail.com","password") #new credentials
         test_credentials.save_credentials()
         self.new_credentials_list.delete_account
         self.assertEqual(len(Credentials.credentials_list),1)

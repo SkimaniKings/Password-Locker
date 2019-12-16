@@ -44,10 +44,9 @@ def display_user(user):
 def main():
     print("Hello! Welcome to Password-Locker")
     print("Choose action you would wish to take")
-    print('\n')
     print('-'*100)
     while True:
-        print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
+        print("Kindly use this short codes \n CU: To create new user account\n LG: To log in to existing account \n DA: To display list of accounts \n EX:To exit")
         short_code=input()
         if short_code=='cu' :
             print("welcome. Follow this simple steps to Create an account")
@@ -68,7 +67,8 @@ def main():
             if response =='y':
                 print(f"Hello {f_name} {l_name} . Your account has been successfuly created.")
             else:
-                 print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
+                 print(
+                     "Kindly use this short codes \n CU: To create new user account\n LG: To log in to existing account \n DA: To display list of accounts \n EX:To exit")
             break 
         elif short_code == 'lg':
             print("Welcome.What site would you love to log into?")

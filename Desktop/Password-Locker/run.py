@@ -12,6 +12,15 @@ def save_user(user):
     Function to save user
     """
     user.save_user_details()
+
+def login_user(user_name,password):
+    '''
+  function that checks whether a user exist and then login the user in.
+    '''
+    check_user_exist = Credentials.check_user_exist(user_name,password)
+    
+    return check_user_exist
+
 def create_credential(uname, pword, email):
     """
     Function to create new user credentials
@@ -70,7 +79,19 @@ def main():
             else:
                  print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
         elif short_code == 'lg':
-            print("Welcome . What site would you love to create an account for?")
+            print("Welcome.What site would you love to create an account for?")
+            site = input()
+            print(f"Welcome to {site}. Have fun!")
+            print('-'*50)
+            print("First name ....")
+            f_name=input()
+            print('Last name....')
+            l_name=input()
+            print('Enter email address ....')
+            email=input()
+            
+            
+            
         else:
             print("You have made an invalid choice. Please try again")
             

@@ -17,3 +17,9 @@ class Credentials:
         test to confirm if the application saves multiple users
         '''
         Credentials.credentials_list.append(self)
+    @classmethod
+    def display_credentials(cls):
+        """
+        method that returns the class array
+        """
+        return cls.credentials_list

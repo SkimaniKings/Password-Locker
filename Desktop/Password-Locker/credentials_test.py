@@ -26,9 +26,13 @@ class TestUser(unittest.TestCase):
         '''
         self.new_credentials_list.save_credentials()
         test_credentials=("facebook","testerT@gmail.com","password")
-        test_credentials.save_credentials()
+        # test_credentials.save_credentials()
         self.assertEqual(len(Credentials.credentials_list),2)
-        
+    def test_display_credentials(self):
+        '''
+        A test to check if saved credentials can be displayed
+        '''
+        self.assertEqual(Credentials.display_credentials(),Credentials.credentials_list)  
         
 if __name__ == '__main__':
     unittest.main()

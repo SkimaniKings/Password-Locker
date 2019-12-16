@@ -69,6 +69,7 @@ def main():
                 print(f"Hello {f_name} {l_name} . Your account has been successfuly created.")
             else:
                  print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
+            break 
         elif short_code == 'lg':
             print("Welcome.What site would you love to log into?")
             site = input()
@@ -87,7 +88,8 @@ def main():
             print(f"Welcome {user_name} Your credentials have been received.")
             save_user(create_user(fname,lname,phone,email))
         elif short_code == 'ex':
-            print("Thank for Visiting Password-Locker.......See you soon!")    
+            print("Thank for Visiting Password-Locker.......See you soon!")   
+            break  
             
             
         else:

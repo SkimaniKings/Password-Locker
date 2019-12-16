@@ -9,5 +9,10 @@ class User:
         self.last_name = last_name
         self.phone_number = phone_number
         self.email = email
-  
+ def save_user_details(self):
+        """
+        save_contact method saves contact objects into user_array
+        """
+        User.user_list.append(self)
+
  

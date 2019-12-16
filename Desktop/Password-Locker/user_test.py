@@ -22,7 +22,7 @@ class TestUser(unittest.TestCase):
          the users array
         """
         self.new_user.save_user_details()  
-        self.assertEqual(len(User.users_array), 1)
+        self.assertEqual(len(User.user_list), 1)
 
 if __name__ == '__main__':
     unittest.main()

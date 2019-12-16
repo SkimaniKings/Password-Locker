@@ -37,6 +37,8 @@ class TestUser(unittest.TestCase):
         test_user=User("Test","Tester","0712345678","testuser@gmail.com")
         test_user.save_user_details()
         self.assertEqual(len(User.user_list),2)
+    def test_display_users(self):
+            self.assertEqual(User.display_users(),User.user_list)
 
 if __name__ == '__main__':
     unittest.main()

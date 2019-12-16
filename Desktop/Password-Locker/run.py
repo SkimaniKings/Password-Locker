@@ -63,11 +63,21 @@ def main():
             print('Enter email address ....')
             email=input()
             # save_user(create_user(f_name,l_name,phone,email)) #save and create user
+            print('\n')
             print("How would you love your password? \n pp:To generate own password \n pg:Have password generated for you")
             password=input()
             if password == 'pp':
                 print("Enter Password....")
                 passwords=input()
+                print(f"Hello {f_name} your password has been generated")
+                print('-'*50)
+            else:
+                print(f" Hey {f_name}, a new password will be generated for you.")
+                s = "abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+                pword= "".join(random.sample(s, 8))
+                print(f"Hey {f_name}, you new {site} password is {pword}")
+                break 
+                
             print('\n')
             print(f"Please confirm your details fname:{f_name} lname:{l_name}  phone:{phone} email:{email}")
             print("Enter 'y' to continue or 'n' to input new data")

@@ -61,6 +61,8 @@ def main():
             print('Enter email address ....')
             email=input()
             
+            save_user(create_user(fname,lname,phone,email)) #create and save user account
+            
 if __name__ == '__main__':
   main()
     

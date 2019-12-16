@@ -12,4 +12,8 @@ class Credentials:
         save credentials list into credentials list array
         '''
         Credentials.credentials_list.append(self)
-    
+    def save_credentials(self):
+        '''
+        test to confirm if the application saves multiple users
+        '''
+        Credentials.credentials_list.append(self)

@@ -16,7 +16,7 @@ def create_credential(uname, pword, email):
     """
     Function to create new user credentials
     """
-    new_credential = Credentials(uname, pword, email)
+    new_credential = Credential(uname, pword, email)
     return new_credential 
 
 def save_credential(credential):
@@ -24,6 +24,13 @@ def save_credential(credential):
     Function to save user credentials
     """
     credential.save_credential()
+
+def delete_credentials(credential):
+    """
+    Function to delete all users credentials
+    """
+    credential.delete_credential()
+
 def main():
     print("Hello! Welcome to Password-Locker")
     print("Choose action you would wish to take")

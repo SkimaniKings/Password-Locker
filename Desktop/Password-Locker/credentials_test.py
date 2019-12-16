@@ -24,7 +24,7 @@ class TestUser(unittest.TestCase):
         test to test if the credentials are being saved
         '''
         self.new_credentials_list.save_credentials()
-        self.assertEqual(len(Credentials.credentials_list),2)
+        self.assertEqual(len(Credentials.credentials_list),1)
     def test_save_multiple_credentials(self):
         '''
         test to confirm if the application saves multiple users
@@ -45,7 +45,7 @@ class TestUser(unittest.TestCase):
         self.new_credentials_list.save_credentials()
         test_credentials=Credentials("facebook","testerT@gmail.com","password") #new credentials
         test_credentials.save_credentials()
-        self.new_credentials_list.delete_account
+        self.new_credentials_list.delete_account()
         self.assertEqual(len(Credentials.credentials_list),1)
           
 if __name__ == '__main__':

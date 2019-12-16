@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.6
+
 import credentials
 import user 
 def create_user(fname,lname,phone,email):
@@ -16,12 +16,18 @@ def create_credential(uname, pword, email):
     """
     Function to create new user credentials
     """
-    new_credential = Credential(uname, pword, email)
-    return new_credential
+    new_credential = Credentials(uname, pword, email)
+    return new_credential 
 
 def save_credential(credential):
     """
     Function to save user credentials
     """
     credential.save_credential()
+def main():
+    print("Hello! Welcome to Password-Locker")
+    print("Choose action you would wish to take")
+if __name__ == '__main__':
+    
+    main()
     

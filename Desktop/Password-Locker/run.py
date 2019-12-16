@@ -44,7 +44,11 @@ def display_user(user):
 def main():
     print("Hello! Welcome to Password-Locker")
     print("Choose action you would wish to take")
+    print('\n')
+    print('-'*100)
+    while True:
+        print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
+        short_code=input().lower()
 if __name__ == '__main__':
-    
-    main()
+  main()
     

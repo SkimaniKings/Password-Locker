@@ -49,6 +49,18 @@ def main():
     while True:
         print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
         short_code=input().lower()
+        if short_code=='cu' :
+            print("welcome. Follow this simple steps to Create an account")
+            print('-'*50)
+            print("First name ....")
+            fname=input()
+            print('Last name....')
+            lname=input()
+            print("Enter Phone Number")
+            phone=input()
+            print('Enter email address ....')
+            email=input()
+            
 if __name__ == '__main__':
   main()
     

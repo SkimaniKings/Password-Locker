@@ -11,7 +11,7 @@ def save_user(user):
     """
     Function to save user
     """
-    user.save_user_details()
+    user.save_credentials()
 def create_credential(uname, pword, email):
     """
     Function to create new user credentials
@@ -48,7 +48,7 @@ def main():
     print('-'*100)
     while True:
         print("Kindly use this short codes CU: To create new user account LG: To log in to existing account DA: To display list of accounts EX:To exit")
-        short_code=input().lower()
+        short_code=input()
         if short_code=='cu' :
             print("welcome. Follow this simple steps to Create an account")
             print('-'*50)
@@ -61,8 +61,13 @@ def main():
             print('Enter email address ....')
             email=input()
             
-            save_user(create_user(fname,lname,phone,email)) #create and save user account
+            # save_user(create_user(fname,lname,phone,email)) 
+            print(f"Please confirn your details fname:{fname} lname:{lname}  phone:{phone} email:{email}")
+            print("Enter 'y' to continue or 'n' to input new data")
+            print(f"Hello {fname} {lname} . Your account has been successfuly created.")
+            
             
 if __name__ == '__main__':
-  main()
+    
+    main()
     

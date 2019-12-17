@@ -17,7 +17,23 @@
 - Clone this GitHub repository to your local machine.
  - use the command: git clone https://github.com/SkimaniKings/Password-Locker/tree/master/Desktop/Password-Locker
 
-
+## BDD
+1. Create an Account 
+- input:`First-Name`
+- output:`first-Name`
+- input:`last-name`
+- output:`last-name`
+- input:`phone-no`
+- output:`phone no`
+- input:`email`
+- output:`email`
+- `One has an option of typing in his own password or allowing the apllication to generate a password for them`
+- input:`own- password`
+- output:`passord`
+- input:`short-code to generate password`
+- output:`generated password`
+- output:`Message to notify you that the account for the site has been created`
+2. 
 ## Technologies Used
 
 - python 3.6

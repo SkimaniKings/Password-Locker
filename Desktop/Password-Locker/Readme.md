@@ -11,6 +11,7 @@
 ## Project screenShots
 
 - This is a screenshot to the project
+- ![Password-Locker](images/image.png)
 
 ## Installation
 

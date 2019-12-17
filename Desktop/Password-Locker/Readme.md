@@ -17,6 +17,7 @@
 
 - Clone this GitHub repository to your local machine.
 - use the command: git clone https://github.com/SkimaniKings/Password-Locker/tree/master/Desktop/Password-Locker
+- Run the ./run.py script on the terminal to open.
 
 ## BDD
 

@@ -88,6 +88,13 @@ def main():
                      "Kindly use this short codes \n CU: To create new user account\n LG: To log in to existing account \n DA: To display list of accounts \n EX:To exit")
             break
             save_user(create_user(f_name, l_name, phone,email))
+        elif short_code=='da':
+            print("-"*50)
+            print("Enter UserName...")
+            UserName=input()
+            print('-'*100)
+            print("Am afraid the user is not registered with us...")
+            break 
         elif short_code == 'lg':
             print("Welcome.What site would you love to log into?")
             site = input()

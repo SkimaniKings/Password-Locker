@@ -57,6 +57,14 @@
 
 ---
 
+4. Display list of Application
+
+- Input the short code `da` to display saved accounts.
+- Input: `da`
+- Output: `list of accounts saved`
+
+---
+
 - If one enters a short code that is not offered by in the short codes option the application prints out an error message ang allows you to have the option of choosing another option.
 
 ## Technologies Used

@@ -95,6 +95,7 @@ def main():
             password = input("password: ")
             print(f"Welcome {user_name} Your credentials have been received.")
             print(f"Welcome to {site}. Have fun!")
+            break
            
         elif short_code == 'ex':
             print("Thank for Visiting Password-Locker.......See you soon!")   

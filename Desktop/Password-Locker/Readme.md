@@ -15,10 +15,12 @@
 ## Installation
 
 - Clone this GitHub repository to your local machine.
- - use the command: git clone https://github.com/SkimaniKings/Password-Locker/tree/master/Desktop/Password-Locker
+- use the command: git clone https://github.com/SkimaniKings/Password-Locker/tree/master/Desktop/Password-Locker
 
 ## BDD
-1. Create an Account 
+
+1. Create an Account
+
 - input:`First-Name`
 - output:`first-Name`
 - input:`last-name`
@@ -33,7 +35,28 @@
 - input:`short-code to generate password`
 - output:`generated password`
 - output:`Message to notify you that the account for the site has been created`
-2. 
+
+---
+
+2. Log in to account
+
+- input:`user_name`
+- output:`user_name`
+- input:`password`
+- output:`password`
+- output:`message to tell you that you have been logged in`
+
+---
+
+3. Exit the application
+
+- input:`short code to exit ie:Ex`
+- output:`message to thank you for visting the site`
+
+---
+
+- If one enters a short code that is not offered by in the short codes option the application prints out an error message ang allows you to have the option of choosing another option.
+
 ## Technologies Used
 
 - python 3.6
@@ -43,7 +66,9 @@
 - reach me through:
   - 0713813919
   - kimanisimon856@gmail.com
-## Licence 
+
+## Licence
+
 - The MIT License (MIT)
 
 Copyright (c) 2019 Simon Kimani.
